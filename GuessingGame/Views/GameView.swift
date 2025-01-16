@@ -97,9 +97,7 @@ struct GameView: View {
         // When should they guess higher?
         // When should then guess lower?
         // FILL IN THIS CODE
-        let a = target
-        let b = selectedNumber
-        if a > b {
+        if target > selectedNumber {
             feedback = "Higher"
         } else if selectedNumber == target{
             feedback = "You win!"
