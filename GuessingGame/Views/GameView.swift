@@ -67,7 +67,7 @@ struct GameView: View {
                     .font(.title3.smallCaps())
                 ScrollView {
                     VStack(spacing: 5) {
-                        ForEach(guessesMade, id: \.self) { currentGuess in
+                        ForEach(guessesMade.reversed(), id: \.self) { currentGuess in
                             Text("\(currentGuess)")
                             Divider()
                         }
